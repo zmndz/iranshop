@@ -1,0 +1,628 @@
+.header-desktop {
+  z-index: 2;
+  position: relative;
+
+  &__row {
+    background-color: #fff;
+    box-shadow: 0 7px 8px 0 rgba(0,0,0,.04);
+    padding: 12px 0 0;
+
+    &--sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  .logo {
+    width: 110px;
+    height: auto;
+    padding-left: 24px;
+  }
+
+  &__right-side {
+    display: flex;
+    padding-right: 15px;
+    padding-bottom: 12px;
+  }
+
+  &__action {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 15px;
+    padding-bottom: 12px;
+
+    &--divider {
+      position: relative;
+      padding: 0 12px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 24px;
+        background-color: $material-grey-300;
+        top: 10px;
+      }
+    }
+  }
+
+  &__login {
+    display: flex;
+    padding: 10px 12px;
+    border: 1px solid $material-grey-300;
+    border-radius: $default-radius;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    &-label {
+      line-height: 1.833;
+      font-size: 0.857rem;
+      white-space: nowrap;
+    }
+
+    &-icon {
+      line-height: 1.833;
+      font-size: 1.714rem;
+      margin-left: 8px;
+      line-height: 24px;
+    }
+  }
+
+  &__loggedin {
+    display: flex;
+    padding: 10px 12px;
+    border-radius: $default-radius;
+    position: relative;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &-label {
+      line-height: 1.833;
+      font-size: 1.714rem;
+      white-space: nowrap;
+      line-height: 24px;
+    }
+
+    &-icon {
+      line-height: 1.833;
+      font-size: 1.714rem;
+      margin-left: 8px;
+      line-height: 24px;
+    }
+
+    &-list {
+      position: absolute;
+      background-color: #fff;
+      width: 200px;
+      border-radius: 5px;
+      top: 48px;
+      left: 0;
+      box-shadow: $menu-box-shadow;
+      display: none;
+    }
+
+    &:focus {
+      background-color: lighten($background-color, 2%);
+      outline: none;
+
+      .header-desktop__loggedin-list {
+        display: block;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 0.857rem;
+      line-height: 1.833;
+      position: relative;
+      color: $text-color;
+
+      &:hover {
+        background-color: $background-color;
+      }
+
+      &::after {
+        content: "";
+        width: calc(100% - 32px);
+        height: 1px;
+        background: $background-color;
+        position: absolute;
+        left: 16px;
+        bottom: 0;
+      }
+    }
+
+
+    &-avatar {
+      margin-left: 10px;
+      font-size: 1.2rem;
+    }
+  }
+
+
+
+  &__cart {
+    cursor: pointer;
+
+    &-wrapper {
+      line-height: 1.833;
+      font-size: 1.714rem;
+      height: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transition: all $transition-time;
+
+      &:hover { 
+        background-color: lighten($background-color, 2%);
+        outline: none;
+
+        .header-desktop__cart-products-wrapper {
+          display: block;
+        }
+      }
+
+    }
+
+    &-count {
+      background-color: $primary-color;
+      font-size: 10px;
+      font-size: .714rem;
+      line-height: 16px;
+      color: #fff;
+      width: 20px;
+      height: 18px;
+      text-align: center;
+      vertical-align: middle;
+      border-radius: 5px;
+      font-weight: 900;
+      border: 2px solid #fff;
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+
+    &-item {
+      padding: 15px 0;
+      margin: 0 12px;
+      display: flex;
+      border-bottom: 1px solid $material-grey-300;
+
+
+      &-details {
+        margin-right: 12px;
+      }
+
+      &-name {
+        font-weight: bold;
+      }
+
+      &-cost {
+        display: flex;
+        align-items: center;
+        color: darken($background-color, 30%);
+      }
+
+      &-currency {
+        margin-right: 4px;
+      }
+
+      &-seller {
+        color: darken($background-color, 30%);
+      }
+
+      &-remove {
+        font-size: 1.833rem;
+        color: darken($background-color, 30%);
+        display: flex;
+      }
+
+      &-image {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+
+        &-wrapper {
+          width: 75px;
+          height: 75px;
+
+        }
+      }
+    }
+
+    &-products {
+      overflow: auto;
+      width: 300px;
+      height: 100%;
+      max-height: 220px;
+
+      &-wrapper {
+        position: absolute;
+        background-color: #fff;
+        top: 42px;
+        left: 0px;
+        box-shadow: 0 4px 12px 0 rgba(0,0,0,.2);
+        z-index: 1;
+        border-radius: $default-radius;
+        font-size: 0.857rem;
+        overflow: hidden;
+        display: none;
+      }
+
+    }
+
+    &-total-price {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // background: lighten($secondary-color, 50%);
+      background: rgba($secondary-color, 0.1);
+      color: $secondary-color;
+      padding: 12px;
+      font-size: 1rem;
+
+      &-amount {
+        margin: 0 6px;
+      }
+
+      &-label {
+        font-weight: bold;
+      }
+    }
+
+    &-view {
+      color: $secondary-color !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-checkout {
+      background-color: $primary-color;
+      border-radius: $default-radius;
+      color: #fff !important;
+      font-size: 1rem;
+      font-weight: bold;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 0;
+    }
+  }
+
+
+
+  &__navbar {
+    display: flex;
+    position: relative;
+
+    &-wrapper {
+      background-color: #fff;
+      width: 100%;
+      height: 46px;
+      display: flex;
+      align-items: center;
+      padding: 0px 15px;
+
+      &--hide {
+        display: none;
+        // height: 0;
+      }
+    }
+
+    &-list {
+      position: relative;
+
+      &:hover {
+        box-shadow: 0 2px 0px 0px $primary-color;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+      font-size: 1rem;
+      padding: 10px 12px;
+
+
+      &-icon {
+      margin-left: 6px;
+      font-size: 1.28rem;
+      }
+    }
+
+    &-submenu {
+      background-color: #fff;
+      width: 940px;
+      min-height: 200px;
+      top: 43px;
+      right: 0px;
+      position: absolute;
+      border-bottom-left-radius: $default-radius;
+      border-bottom-right-radius: $default-radius;
+      box-shadow: $menu-box-shadow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 11;
+      transition: 0.2s all;
+
+      &::before {
+        content: '';
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        top: -10px;
+        left: 0;
+      }
+
+      &--single-column {
+        width: calc(940px / 4);
+      }
+
+      &--double-column {
+        width: calc(calc(940px / 4) * 2);
+      }
+
+      &--triple-column {
+        width: calc(calc(940px / 4) * 3);
+      }
+
+      &--quarter-column {
+        width: 800px;
+      }
+    }
+
+    &-list:hover &-submenu{
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &-slider {
+      display: none;
+
+      &--active {
+        display: block;
+      }
+    }
+  }
+
+  &__tab-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+      padding: 10px 0;
+      background-color: $background-color;
+    }
+
+    &-list {
+      width: 100%;
+      text-align: center;
+      margin-right: 20px;
+      padding: 16px 12px;
+      cursor: pointer;
+
+      &--active {
+        background-color: #fff;
+        border-radius: $default-radius;
+        color: $primary-color;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items:center;
+      border-radius: $default-radius;
+      text-align: right;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    &-content {
+      list-style: none;
+      background: url('../images/menu-background.png');
+      background-repeat: no-repeat;
+      background-position: bottom left;
+      display: none;
+      height: 100%;
+
+      &-wrapper {
+        padding: 20px;
+        height: 100%;
+      }
+
+      &--active {
+        display: flex;
+      }
+
+      &-title {
+        font-weight: bold;
+        transition: 0.2s all;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      &-submenu {
+        list-style: none;
+      }
+
+      &-sublist {
+      }
+
+      &-list {
+        width: 25%;
+      }
+
+      &-item {
+        line-height: 22px;
+        padding: 5px 10px;
+        display: block;
+        transition: 0.2s all;
+
+        &:hover {
+          color: $primary-color;
+          padding-right: 16px;
+        }
+      }
+    }
+  }
+
+  &__column-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+      padding: 10px 0;
+      background-color: $background-color;
+    }
+
+    &-list {
+      width: 100%;
+      text-align: center;
+      margin-right: 20px;
+      padding: 16px 12px;
+      cursor: pointer;
+
+      &--active {
+        background-color: #fff;
+        border-radius: $default-radius;
+        color: $primary-color;
+      }
+    }
+
+    &-item {
+      display: flex;
+      align-items:center;
+      border-radius: $default-radius;
+      text-align: right;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    &-content {
+      list-style: none;
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+
+      &-wrapper {
+        padding: 20px;
+        height: 100%;
+      }
+
+      &--active {
+        display: flex;
+      }
+
+      &-title {
+        font-weight: bold;
+        transition: 0.2s all;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      &-submenu {
+        list-style: none;
+        width: 100%;
+      }
+
+      &-sublist {
+        position: relative;
+
+        &:hover {
+          .header-desktop__column-menu-content-sub {
+            opacity: 1;
+            visibility: visible;
+            left: -130%;
+          }
+        }
+      }
+
+      &-sub {
+        position: absolute;
+        background-color: #fff;
+        position: absolute;
+        border-radius: $default-radius;
+        box-shadow: $menu-box-shadow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 11;
+        left: -126%;
+        top: -10px;
+        transition: all $transition-time;
+
+        &::before {
+          content: '';
+          width: 20px;
+          height: 100%;
+          position: absolute;
+          right: -20px;
+        }
+      }
+
+      &-list {
+        width: 100%;
+      }
+
+      &-item {
+        line-height: 22px;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        transition: 0.2s all;
+
+        &:hover {
+          color: $primary-color;
+          padding-right: 16px;
+        }
+      }
+    }
+  }
+
+}
+
+.search {
+  &-wrapper {
+    width: 60%;
+  }
+}

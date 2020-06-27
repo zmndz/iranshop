@@ -1,0 +1,18 @@
+.banner__full-width {
+
+  &-wrapper {
+    margin-bottom: 40px;
+    // padding: 0 7px;
+  }
+
+  &-link {
+    display: block;
+    border-radius: $default-radius;
+    overflow: hidden;
+    box-shadow: $default-box-shadow;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

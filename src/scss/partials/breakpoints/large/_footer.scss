@@ -1,0 +1,61 @@
+.footer {
+
+  &__services {
+    padding-bottom: 0px;
+    margin: 0 40px;
+    
+    &-item {
+      padding-top: 100px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &__middlebar {
+    margin: 0 40px;
+    
+  }
+
+  &__newsletter {
+
+    &-title {
+      font-weight: bold;
+      font-size: 1.142rem;
+      line-height: 44px;
+      margin-bottom: 20px;
+    }
+
+    &-form {
+      flex-direction: row;
+    }
+
+    &-input {
+      border-left: none;
+      border-radius: 0 $default-radius $default-radius 0 ;
+      margin-bottom: 0px;
+    }
+
+    &-button {
+      border-radius: $default-radius 0 0 $default-radius;
+      width: 30%;
+    }
+  }
+
+  &__address {
+    margin: 0 40px;
+  }
+
+  &__info {
+    padding: 15px 40px;
+  }
+
+  &__partners {
+
+    &-wrapper {
+      padding: 15px 40px;
+    }
+  }
+
+  &__copyright {
+    padding: 15px 40px;
+  }
+}

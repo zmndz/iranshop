@@ -1,0 +1,26 @@
+@import 'partials/variables/_material_colors';
+
+$primary-background-color:          $material-theme-light-app;
+$secondary-background-color:        $material-grey-200;
+$primary-color:                     #F05662;
+$secondary-color:                   $material-grey-500;
+$primary-text-color:                $material-grey-600;
+$secondary-text-color:              $material-grey-700;
+$link-active-color:                 $primary-text-color;
+$link-hover-color:                  $primary-color;
+$border-color:                      $material-grey-300;
+$shadow-color:                      $material-grey-400;
+
+
+$primary-color:                     #F05662;
+$secondary-color:										#00bfd6;
+$background-color: 									#F5F5F5;
+$text-color: 												#515151;
+$link-active-color:                 #616161;
+$link-hover-color:                  #616161;
+$product-name-color:								#535353;
+$product-price-color:								#000000;
+$product-old-price-color:						#ababab;
+$icon-color:												#a1a1a1;
+$icon-light-color:									lighten($icon-color, 8%);
+$icon-dark-color:										darken($icon-color, 8%);

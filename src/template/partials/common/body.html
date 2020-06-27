@@ -1,0 +1,56 @@
+<div class="container-fluid">
+	@@if (name === "test") {
+		@@include('header.html', {
+		"msg": "index"
+		})
+	}
+
+	<div class="container-gap">
+
+		<div class="row">
+			<div class="col-12 col-lg-8">
+				@@include('../sliders/mainSlider.html')
+			</div>
+			<div class="d-none d-lg-block col-lg-4">
+				@@include('../banners/sideBanner.html')
+			</div>
+		</div>
+
+		@@include('../banners/quarterBanner.html')
+
+		<div class="row">
+			<div class="col-12">
+				@@include('../others/categories.html')
+			</div>
+		</div>
+
+		@@include('../banners/doubleBanner.html')
+
+		<div class="row">
+			<div class="col-12">
+				@@include('../banners/fullWidthBanner.html')
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 col-lg-9">
+				@@include('../sliders/productSlider.html')
+			</div>
+			<div class="col-12 col-lg-3">
+				@@include('../sliders/momentSlider.html')
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12">
+				@@include('../sliders/brandSlider.html')
+			</div>
+		</div>
+
+		@@include('../sliders/specialSlider.html')
+		
+	<!-- footer start -->
+	@@include('footer.html')
+	<!-- footer end -->
+	</div>
+</div>

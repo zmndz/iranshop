@@ -1,0 +1,14 @@
+// Large devices (desktops, 992px and up)
+@media (min-width: 991.98px) {
+	.container-fluid {
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+
+	@import '_header__desktop';
+	@import '_categories';
+	@import '_product-slider';
+	@import '_brand-slider';
+	@import '_special-slider';
+	@import '_footer';
+}

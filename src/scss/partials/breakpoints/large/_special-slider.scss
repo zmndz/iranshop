@@ -1,0 +1,87 @@
+.special-slider {
+  display: flex;
+  align-items: center;
+
+
+  &__wrapper {
+    padding: 15px 20px 15px 20px;
+    margin: 0 -15px 40px -15px;
+
+    &--desktop {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    display: flex;
+    margin: 0 44px;
+    width: 170px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-height: calc(100% - 41px);
+      flex: 1;
+    }
+  }
+
+  &__link {
+
+  }
+
+  &__button {
+    padding: 9px 16px;
+    font-size: 14px;
+    font-size: 1rem;
+    line-height: 1.571;
+    border: 1px solid #fff;
+    color: #fff;
+    position: relative;
+  }
+
+  &__icon {
+    font-size: 1.714rem;
+  }
+
+  &__container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+
+.special-slider-button-next, .special-slider-button-prev {
+  display: flex;
+  color: #000;
+  box-shadow: 1.5px 0 4px 0 rgba(0,0,0,.15);
+  width: 49px;
+  height: 90px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #fff;
+  background-image: unset;
+
+  &::after {
+    font-size: 22px;
+  }
+}
+
+.special-slider-button-next {
+  border-radius: 0 5px 5px 0;
+  margin-left: -10px;
+}
+
+.special-slider-button-prev {
+  border-radius: 5px 0 0 5px;
+  margin-right: -10px;
+}
+
+.special-slider__scrollbar {
+  display: none;
+}

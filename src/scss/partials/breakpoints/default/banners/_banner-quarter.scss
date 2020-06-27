@@ -1,0 +1,20 @@
+.banner__quarter {
+  margin-bottom: 15px;
+
+
+  &-wrapper {
+    margin-bottom: 25px;
+    // padding: 0 7px;
+  }
+
+  &-link {
+    display: block;
+    border-radius: $default-radius;
+    overflow: hidden;
+    box-shadow: $default-box-shadow;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
