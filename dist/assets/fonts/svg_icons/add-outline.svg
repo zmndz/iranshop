@@ -1,0 +1,6 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="add-outline">
+<path id="Vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M256 96C264.837 96 272 103.163 272 112V400C272 408.837 264.837 416 256 416C247.163 416 240 408.837 240 400V112C240 103.163 247.163 96 256 96Z" fill="black"/>
+<path id="Vector (Stroke)_2" fill-rule="evenodd" clip-rule="evenodd" d="M96 256C96 247.163 103.163 240 112 240H400C408.837 240 416 247.163 416 256C416 264.837 408.837 272 400 272H112C103.163 272 96 264.837 96 256Z" fill="black"/>
+</g>
+</svg>
