@@ -13,6 +13,12 @@
   }
 
   &__title {
+    &-wrapper {
+      display: none;
+    }
+  }
+
+  &__right-side {
     display: flex;
     margin: 0 44px;
     width: 170px;

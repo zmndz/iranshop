@@ -1,6 +1,15 @@
 $(document).ready(function() {
 	var isHistoryExist = false;
 
+  $('.js-footer__jump-to-top').click(function() {
+    jumpToStart();
+  })
+
+  function jumpToStart() {
+    var firstElement = $('html, body');
+    firstElement.scrollTop(0);
+  }
+
 	function openSearch() {
 		$('.js-search__result').addClass('search__result--active');
 		$('.js-overlay').addClass('overlay--active');
@@ -140,7 +149,7 @@ $(document).ready(function() {
 	      spaceBetween: 15,
 	    },
 	    991: {
-	      slidesPerView: 3,
+	      slidesPerView: 4,
 	      spaceBetween: 40,
 				freeMode: false,
 	    }
