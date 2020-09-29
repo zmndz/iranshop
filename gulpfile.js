@@ -22,10 +22,7 @@ gulp.task('fileinclude', function() {
   return gulp.src(html_src)
     .pipe(fileinclude({
       prefix: '@@',
-      basepath: '@file',
-      context: {
-        name: 'test'
-      }
+      basepath: '@file'
     }))
     .pipe(gulp.dest(html_dest))
     .pipe(browserSync.stream());

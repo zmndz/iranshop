@@ -1,0 +1,17 @@
+.breadcrumbs {
+  display: flex;
+  font-size: 0.857rem;
+  margin-bottom: 20px;
+
+  &__route {
+    opacity: 0.7;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__seperator {
+    margin: 0 6px;
+  }
+}

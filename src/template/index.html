@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html>
-	@@include('partials/common/head.html')
-<body>
-	@@include('partials/common/body.html')
+@@include('partials/pages/layout-open.html')
 
-	@@include('partials/common/scripts.html')
-</body>
-</html>
+	@@include('partials/pages/page-selector.html', {pageName: "index.html"})
+
+@@include('partials/pages/layout-close.html')

@@ -102,25 +102,35 @@
     font-size: 0.857rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 90px;
+    justify-content: flex-end;
+    min-height: 46px;
   }
 
   &__product-name {
+    background-color: #fff;
     display: block;
     text-align: right;
     height: 50px;
     line-height: 25px;
     overflow: hidden;
+    max-width: 168px;
+    font-size: 0.857rem;
   }
 
   &__price {
-    color: $primary-color;
     padding-top: 10px;
     font-weight: bold;
+    display: flex;
+    flex-direction: column;
 
     &--old {
       color: $product-old-price-color;
+      text-decoration: line-through;
+      width: 100%;
+    }
+
+    &--new {
+      color: $primary-color;
       text-decoration: line-through;
       width: 100%;
     }
@@ -133,7 +143,7 @@
     justify-content: center;
     font-size: 26px;
     position: absolute;
-    top: 50px;
+    top: 0px;
     left: 50%;
     transform: translateX(-50%);
     transition: all .1s ease-in-out 1s;
@@ -141,9 +151,9 @@
     &-item a{
       margin: 0 4px;
       height: 26px;
+
       &:hover {
         color: darken($link-active-color,20%);
-
       }
     }
   }
@@ -166,6 +176,7 @@
       border-radius: 4px;
       top: 30px;
       opacity: 0;
+      display: none;
       transition: all 0.2s ease-in-out;
 
       &::before {
@@ -183,9 +194,11 @@
 
     &:hover .product-slider__like--tooltip{
       opacity: 1;
+      display: block;
 
       &:hover {
         opacity: 0;
+        display: none;
       }
     }
 
@@ -209,6 +222,7 @@
       border-radius: 4px;
       top: 30px;
       opacity: 0;
+      display: none;
       transition: all 0.2s ease-in-out;
 
       &::before {
@@ -225,10 +239,12 @@
     }
 
     &:hover .product-slider__compare--tooltip{
+      display: block;
       opacity: 1;
 
       &:hover {
         opacity: 0;
+        display: none;
       }
     }
   }
@@ -251,6 +267,7 @@
       border-radius: 4px;
       top: 30px;
       opacity: 0;
+      display: none;
       transition: all 0.2s ease-in-out;
 
       &::before {
@@ -268,9 +285,11 @@
 
     &:hover .product-slider__view--tooltip{
       opacity: 1;
+      display: block;
 
       &:hover {
         opacity: 0;
+        display: none;
       }
     }
   }
@@ -293,6 +312,7 @@
       border-radius: 4px;
       top: 30px;
       opacity: 0;
+      display: none;
       transition: all 0.2s ease-in-out;
 
       &::before {
@@ -310,9 +330,11 @@
 
     &:hover .product-slider__cart--tooltip{
       opacity: 1;
+      display: block;
 
       &:hover {
         opacity: 0;
+        display: none;
       }
     }
   }
