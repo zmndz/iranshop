@@ -5,6 +5,10 @@
 	  padding-right: 15px;
 	}
 
+	.container {
+		max-width: 1070px;
+	}
+
 	@import '_header__desktop';
 	@import '_categories';
 	@import '_product-slider';

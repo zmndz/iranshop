@@ -162,7 +162,11 @@
 
   	&-value {
   		color: $secondary-color;
-  		border-bottom: 1px dashed $secondary-color;
+      border-bottom: 1px dashed $secondary-color;
+      
+      &:hover {
+        color: $secondary-color;
+      }
   	}
 
   	&-separator {
@@ -183,7 +187,11 @@
 
   	&-value {
   		color: $secondary-color;
-  		border-bottom: 1px dashed $secondary-color;
+      border-bottom: 1px dashed $secondary-color;
+            
+      &:hover {
+        color: $secondary-color;
+      }
   	}
 
   	&-separator {
@@ -204,7 +212,11 @@
 
   	&-value {
   		color: $secondary-color;
-  		border-bottom: 1px dashed $secondary-color;
+      border-bottom: 1px dashed $secondary-color;
+            
+      &:hover {
+        color: $secondary-color;
+      }
   	}
 
   	&-separator {

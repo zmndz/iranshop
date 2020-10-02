@@ -1,5 +1,7 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1199.98px) {
-	body {
+
+	.container {
+		max-width: 1640px;
 	}
 }

@@ -1,5 +1,10 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 575.98px) {
+
+	.container {
+		max-width: 768px;
+	}
+
 	.product {
 
 	  &__share {

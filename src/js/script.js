@@ -467,7 +467,6 @@ $(document).ready(function() {
   $('.js-product__actions-zoom').click(function (e) {
     e.preventDefault();
     $('.js-product__zoom-modal').css('display', 'flex').hide().fadeIn(100);
-    // zoom(".js-product__zoom-image", 1.5);
     loadZoomSlide('.js-product__zoom-image');
   })
 
@@ -669,6 +668,15 @@ $(document).ready(function() {
     tabPanel.removeClass('product__tabs-panel--active');
     tabPanel.eq(tabIndex).addClass('product__tabs-panel--active');
   });
+
+  $('.js-product__rating-comments').click(function(e) {
+    e.preventDefault();
+    $('.js-product__tabs-item').click();
+    $('html, body').animate({
+      scrollTop: $(".js-product__tabs-item").offset().top
+    }, 700);
+  });
+
 
   $('.product__rating-average').starrr({
     rating: 4,
