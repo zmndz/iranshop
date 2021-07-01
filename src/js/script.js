@@ -1,4 +1,12 @@
 $(document).ready(function() {
+
+  // close search dropdown, if clicked anywhere ouside of search wrapper
+  $(document).mouseup(function(e) {
+    var container = $('.js-search-wrapper');
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+      closeSearch();
+    }
+  })
 	var isHistoryExist = false;
 
   $('.js-product__share-item-link').attr('data-url', window.location.href)
@@ -51,18 +59,25 @@ $(document).ready(function() {
 
 	}
 
-	$('.js-search__input').focusin(function() {
-		openSearch();
+	$('.js-search__input').focusin(function(e) {
+    openSearch();
 	})
 
-	$('.js-search__input').focusout(function() {
-		closeSearch();
+	$('.js-search__input').focusout(function(e) {
+    // closeSearch();
 	})
 
 	$('.js-search__icon-close').click(function(e) {
 		e.preventDefault();
 		resetSearch()
 	});
+
+  $('.search__result-tags--item').click(function(e) {
+		// e.preventDefault();
+    // e.stopPropagation();
+    $('.js-search__input').off();
+		resetSearch()
+  })
 
 	$('.js-search__input').keyup(function(e) {
     if( $(this).val() ) {
@@ -75,6 +90,10 @@ $(document).ready(function() {
 			searchStatus(true);
     }
 	});
+
+  $('.js-search__result').click(function(e) {
+    e.stopPropagation();
+  }); 
 
   $(".js-header-desktop__tab-menu-list").mouseover(function() {
     $('.header-desktop__tab-menu-list--active').not(this).removeClass('header-desktop__tab-menu-list--active')
@@ -554,76 +573,6 @@ $(document).ready(function() {
   }
   magnify(".product__image", 2);
 
-  // function zoom(imgID, zoom) {
-  //   var img, glass, w, h, bw;
-  //   imgList = $(imgID);
-  //   // console.log("imgList", imgList)
-  //   imgList.siblings().remove();
-  //   img = imgList[0];
-  //   // console.log("img", img)
-  //   if (!img) {
-  //     return false
-  //   }
-
-  //   var img, glass, w, h, bw;
-  //   imgList = $(imgID);
-  //   imgList.siblings().remove();
-  //   img = imgList[0];
-  //   if (!img) {
-  //     return false
-  //   }
-  //   /*create magnifier glass:*/
-  //   glass = document.createElement("DIV");
-  //   glass.setAttribute("class", "img-zoom-glass");
-  //   /*insert magnifier glass:*/
-  //   img.parentElement.insertBefore(glass, img);
-  //   /*set background properties for the magnifier glass:*/
-  //   glass.style.backgroundImage = "url('" + img.src + "')";
-  //   glass.style.backgroundRepeat = "no-repeat";
-  //   glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
-  //   bw = 3;
-  //   w = glass.offsetWidth / 2;
-  //   h = glass.offsetHeight / 2;
-  //   /*execute a function when someone moves the magnifier glass over the image:*/
-  //   glass.addEventListener("mousemove", moveMagnifier);
-  //   img.addEventListener("mousemove", moveMagnifier);
-  //   /*and also for touch screens:*/
-  //   glass.addEventListener("touchmove", moveMagnifier);
-  //   img.addEventListener("touchmove", moveMagnifier);
-  //   function moveMagnifier(e) {
-  //     var pos, x, y;
-  //     /*prevent any other actions that may occur when moving over the image*/
-  //     e.preventDefault();
-  //     /*get the cursor's x and y positions:*/
-  //     pos = getCursorPos(e);
-  //     x = pos.x;
-  //     y = pos.y;
-  //     /*prevent the magnifier glass from being positioned outside the image:*/
-  //     if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-  //     if (x < w / zoom) {x = w / zoom;}
-  //     if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-  //     if (y < h / zoom) {y = h / zoom;}
-  //     /*set the position of the magnifier glass:*/
-  //     glass.style.left = (x - w) + "px";
-  //     glass.style.top = (y - h) + "px";
-  //     /*display what the magnifier glass "sees":*/
-  //     glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
-  //   }
-  //   function getCursorPos(e) {
-  //     var a, x = 0, y = 0;
-  //     e = e || window.event;
-  //     /*get the x and y positions of the image:*/
-  //     a = img.getBoundingClientRect();
-  //     /*calculate the cursor's x and y coordinates, relative to the image:*/
-  //     x = e.pageX - a.left;
-  //     y = e.pageY - a.top;
-  //     /*consider any page scrolling:*/
-  //     x = x - window.pageXOffset;
-  //     y = y - window.pageYOffset;
-  //     return {x : x, y : y};
-  //   }
-  // }
-
   $('.js-product__tabs-responsive').click(function() {
     $(this).closest('.js-product__tabs-panel').toggleClass('product__tabs-panel-closed');
     var moreButton = $(this).find('.js-product__tabs-responsive-link');
@@ -746,7 +695,94 @@ $(document).ready(function() {
     return true
   }
 
+  
+  $('.js-result__widget-title').click(function(e) {
+    $(this).parent('div').find('.js-result__widget-content').slideToggle('fast');
+    $(this).parent('div').find('.js-result__widget-icon').toggleClass('result__widget-icon--rotate-reverse');
+  })
 
+  $('.js-result__widget-brand-item').click(function(e) {
+    var isChecked = $(this).find('input').prop("checked")==true;
+    if (!isChecked) {
+      $(this).find('input').prop("checked", true);
+    } else {
+      $(this).find('input').prop("checked", false);
+    }
+  })  
+  
+  $('.js-result__widget-brand-item input').click(function(e) {
+    e.stopPropagation();
+  })
+
+  $('.js-result__widget-colors-item').click(function(e) {
+    var isChecked = $(this).find('input').prop("checked")==true;
+    if (!isChecked) {
+      $(this).find('input').prop("checked", true);
+    } else {
+      $(this).find('input').prop("checked", false);
+    }
+  })  
+  
+  $('.js-result__widget-colors-item input').click(function(e) {
+    e.stopPropagation();
+  })
+
+  $('.js-result__widget-categories-more').click(function(e) {
+    var categoriesClosed = $('.js-result__widget-categories');
+    var isCategoriesClosed = categoriesClosed.hasClass('result__widget-categories--closed');
+    var transitionSpeed = 200;
+    var minHeight = categoriesClosed.css('min-height');
+    var maxHeight = categoriesClosed.css('height', 'auto').height();
+
+    $(this).parent('div').find('.js-result__widget-categories-icon').toggleClass('result__widget-categories-icon--rotate-reverse');
+    if (isCategoriesClosed) {
+      categoriesClosed.css('height', minHeight).animate({height: maxHeight}, transitionSpeed);
+      categoriesClosed.removeClass('result__widget-categories--closed');
+    } else {
+      categoriesClosed.animate({height: minHeight}, transitionSpeed);
+      categoriesClosed.addClass('result__widget-categories--closed');
+    }
+  })
+
+  $('.js-result__order-item').click(function(e) {
+    console.log($(this))
+    $(this).addClass('result__order-item--active');
+    $('.js-result__order-item').not(this).removeClass('result__order-item--active');
+
+  })
+
+    var dragSlider = document.querySelector('.js-result__widget-price-slider');
+
+    if (dragSlider) {
+      noUiSlider.create(dragSlider, {
+        start: [90000, 300000],
+        // behaviour: 'drag',
+        step: 1,
+        connect: true,
+        range: {
+            'min': 1000,
+            'max': 600000
+        },
+        direction: 'rtl',
+        behaviour: 'tap-drag',
+        format: wNumb({
+          decimals: 3,
+          thousand: ',',
+        }),
+
+      });
+
+      var priceRangeFrom = document.querySelector('.js-result__widget-price-range-from');
+      var priceRangeTo = document.querySelector('.js-result__widget-price-range-to');
+
+      dragSlider.noUiSlider.on('update', function (values, handles) {
+        priceRangeFrom.innerHTML = values[0];
+        priceRangeTo.innerHTML = values[1];
+      });
+    
+    }
+  
+  
 })
 
 

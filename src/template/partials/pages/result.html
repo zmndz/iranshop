@@ -1,8 +1,2240 @@
 <div class="container">
-	<div class="result-container">
-		@@include('../common/breadcrumbs.html')
+	<div class="row">
+		<div class="col-12">
+			<div class="button">
+				جستجوی پیشرفته
+			</div>
+			<div class="button">
+				مرتب سازی
+			</div>
+		</div>
+	</div>
+	<div class="modal-wrapper modal--hide">
+		<div class="modal">
+			<div class="modal__title">
+				<div>
+					مرتب سازی بر اساس:
+				</div>
+				<div>
+					X
+				</div>
+			</div>
+			<div class="modal__content">
+				<ul class="order-responsive">
+					<li class="order-responsive__item">
+						<input type="radio" id="js-order-viewed" name="sort" value="">
+						<label for="js-order-viewed">پر بازدید ترین</label><br>
+					</li>
+					<li class="order-responsive__item">
+						<input type="radio" id="js-order-sale" name="sort" value="">
+						<label for="js-order-sale">پر فروش ترین</label><br>
+					</li>
+					<li class="order-responsive__item">
+						<input type="radio" id="js-order-popular" name="sort" value="">
+						<label for="js-order-popular">محبوب ترین</label><br>
+					</li>
+					<li class="order-responsive__item">
+						<input type="radio" id="js-order-newest" name="sort" value="">
+						<label for="js-order-newest">جدید ترین</label><br>
+					</li>
+					<li class="order-responsive__item">
+						<input type="radio" id="js-order-cheapest" name="sort" value="">
+						<label for="js-order-cheapest">ارزان ترین</label><br>
+					</li>
+					<li class="order-responsive__item">
+						<input type="radio" id="js-order-expensive" name="sort" value="">
+						<label for="js-order-expensive">گران ترین</label><br>
+					</li>
+				</ul>
+		</div>
+		</div>
+	</div>
+	<div class="page">
+		<div class="result__filter">
+			<!-- "Widget start" -->
+			<div class="result__widget">
+				<div class="result__widget-title js-result__widget-title">
+					<div class="result__widget-caption">
+						برندها
+					</div>
+					<div class="result__widget-icon result__widget-icon--rotate js-result__widget-icon">
+						<span class="icon-down-outline"></span>
+					</div>
+				</div>
+				<div class="result__widget-content js-result__widget-content">
+					<ul class="result__widget-brand">
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-brand-item js-result__widget-brand-item">
+							<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-brand-name">
+								<div class="result__widget-brand-name-persian">
+									سامسونگ
+								</div>
+								<div class="result__widget-brand-name-english">
+									Samsung
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Widget end -->
 
-		<h1>Result page</h1>
+			<!-- "Widget start" -->
+			<div class="result__widget">
+				<div class="result__widget-title js-result__widget-title">
+					<div class="result__widget-caption">
+						دسته بندی ها
+					</div>
+					<div class="result__widget-icon result__widget-icon--rotate js-result__widget-icon">
+						<span class="icon-down-outline"></span>
+					</div>
+				</div>
+				<div class="result__widget-content js-result__widget-content">
+					<ul class="result__widget-categories result__widget-categories--closed js-result__widget-categories">
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-down-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									کالای دیجیتال
+								</div>			
+							</a>
+							<ul class="result__widget-subcategories">
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											کامپیوتر و لپتاپ
+										</div>
+									</a>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											گوشی موبایل
+										</div>
+									</a>
+									<ul class="result__widget-subcategories">
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>		
+												<div class="result__widget-categories-title">
+													سامسونگ
+												</div>
+											</a>
+										</li>
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>		
+												<div class="result__widget-categories-title">
+													اپل
+												</div>
+											</a>
+										</li>
+									</ul>		
+								</li>
+							</ul>
+						</li>
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-back-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									لوازم خانگی
+								</div>
+							</a>
+						</li>
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-back-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									لوازم آرایشی
+								</div>
+							</a>
+						</li>
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-down-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									کالای دیجیتال
+								</div>			
+							</a>
+							<ul class="result__widget-subcategories">
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											کامپیوتر و لپتاپ
+										</div>
+									</a>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											گوشی موبایل
+										</div>
+									</a>
+									<ul class="result__widget-subcategories">
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>		
+												<div class="result__widget-categories-title">
+													سامسونگ
+												</div>
+											</a>
+										</li>
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>		
+												<div class="result__widget-categories-title">
+													اپل
+												</div>
+											</a>
+										</li>
+									</ul>		
+								</li>
+							</ul>
+						</li>
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-back-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									لوازم خانگی
+								</div>
+							</a>
+						</li>
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-back-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									لوازم آرایشی
+								</div>
+							</a>
+						</li>
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-down-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									کالای دیجیتال
+								</div>			
+							</a>
+							<ul class="result__widget-subcategories">
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											کامپیوتر و لپتاپ
+										</div>
+									</a>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											گوشی موبایل
+										</div>
+									</a>
+									<ul class="result__widget-subcategories">
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>		
+												<div class="result__widget-categories-title">
+													سامسونگ
+												</div>
+											</a>
+										</li>
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>		
+												<div class="result__widget-categories-title">
+													اپل
+												</div>
+											</a>
+										</li>
+									</ul>		
+								</li>
+							</ul>
+						</li>
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-back-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									لوازم خانگی
+								</div>
+							</a>
+						</li>
+						<li class="result__widget-categories-item js-result__widget-categories-item">
+							<a href="#" class="result__widget-categories-link">
+								<div class="result__widget-categories-icon">
+									<span class="icon-back-outline"></span>
+								</div>
+								<div class="result__widget-categories-title">
+									لوازم آرایشی
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="result__widget-categories-more js-result__widget-categories-more">
+						مشاهده همه دسته بندی ها
+						<span class="result__widget-categories-icon result__widget-categories-icon--rotate js-result__widget-categories-icon">
+							<span class="icon-down-outline"></span>
+						</span>	
+					</div>
+				</div>
+			</div>
+			<!-- Widget end -->
+
+			<!-- "Widget start" -->
+			<div class="result__widget">
+				<div class="result__widget-title js-result__widget-title">
+					<div class="result__widget-caption">
+						رنگ ها
+					</div>
+					<div class="result__widget-icon result__widget-icon--rotate js-result__widget-icon">
+						<span class="icon-down-outline"></span>
+					</div>
+				</div>
+				<div class="result__widget-content js-result__widget-content">
+					<ul class="result__widget-colors">
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									سبز
+								</div>
+								<div class="result__widget-colors-count">
+									(4)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									قرمز
+								</div>
+								<div class="result__widget-colors-count">
+									(۲)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									آبی
+								</div>
+								<div class="result__widget-colors-count">
+									(3)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									زرد
+								</div>
+								<div class="result__widget-colors-count">
+									(2)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									بنفش
+								</div>
+								<div class="result__widget-colors-count">
+									(8)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									صورتی
+								</div>
+								<div class="result__widget-colors-count">
+									(7)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									سفید
+								</div>
+								<div class="result__widget-colors-count">
+									(9)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									مشکی
+								</div>
+								<div class="result__widget-colors-count">
+									(2)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									نقره ای
+								</div>
+								<div class="result__widget-colors-count">
+									(12)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									قهوه ای
+								</div>
+								<div class="result__widget-colors-count">
+									(1)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									نارنجی
+								</div>
+								<div class="result__widget-colors-count">
+									(5)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									نیلی
+								</div>
+								<div class="result__widget-colors-count">
+									(4)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									طلایی
+								</div>
+								<div class="result__widget-colors-count">
+									(3)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									سرخابی
+								</div>
+								<div class="result__widget-colors-count">
+									(2)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									خاکستری
+								</div>
+								<div class="result__widget-colors-count">
+									(7)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									آبی نفتی
+								</div>
+								<div class="result__widget-colors-count">
+									(6)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									گوجه ای
+								</div>
+								<div class="result__widget-colors-count">
+									(5)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									جگری
+								</div>
+								<div class="result__widget-colors-count">
+									(1)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									فسفری
+								</div>
+								<div class="result__widget-colors-count">
+									(4)
+								</div>
+							</div>
+						</li>
+						<li class="result__widget-colors-item js-result__widget-colors-item">
+							<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+								<input type="checkbox" />
+							</div>
+							<div class="result__widget-colors-title">
+								<div class="result__widget-colors-name">
+									بادمجانی
+								</div>
+								<div class="result__widget-colors-count">
+									(2)
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Widget end -->
+			
+			<!-- "Widget start" -->
+			<div class="result__widget">
+				<div class="result__widget-title js-result__widget-title">
+					<div class="result__widget-caption">
+						محدوده قیمت
+					</div>
+					<div class="result__widget-icon result__widget-icon--rotate js-result__widget-icon">
+						<span class="icon-down-outline"></span>
+					</div>
+				</div>
+				<div class="result__widget-content js-result__widget-content">
+					<div class="result__widget-price">
+						<div class="result__widget-price-slider-wrapper">
+							<div class="result__widget-price-slider js-result__widget-price-slider">
+							</div>
+						</div>
+						<div class="result__widget-price-range">
+							<div class="result__widget-price-range-from-wrapper">
+								از
+								<div class="result__widget-price-range-from js-result__widget-price-range-from">
+									
+								</div>
+								تومان
+							</div>
+							<div class="result__widget-price-range-to-wrapper">
+								تا
+								<div class="result__widget-price-range-to js-result__widget-price-range-to">
+									
+								</div>
+								تومان
+							</div>
+						</div>
+						<div class="result__widget-price-submit-wrapper">
+							<button class="result__widget-price-submit">
+								اعمال محدوه قیمت
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Widget end -->
+
+			<!-- "Widget start" -->
+			<div class="result__widget">
+				<div class="result__widget-title">
+					<div class="result__widget-caption">
+						فیلتر های اعمال شده:
+					</div>
+					<div class="result__widget-filters-close">
+						<span class="">حذف</span>
+					</div>
+				</div>
+				<div class="result__widget-content">
+					<div class="result__widget-filters">
+						<div class="result__widget-filter">
+							<div class="result__widget-filter-title">
+								سامسونگ
+							</div>
+							<div class="result__widget-filter-remove">
+								<span class="icon-close-outline"></span>
+							</div>
+						</div>
+						<div class="result__widget-filter">
+							<div class="result__widget-filter-title">
+								سبز
+							</div>
+							<div class="result__widget-filter-remove">
+								<span class="icon-close-outline"></span>
+							</div>
+						</div>
+						<div class="result__widget-filter">
+							<div class="result__widget-filter-title">
+								از ۲،۰۰۰،۰۰۰ تا ۴۰،۰۰۰،۰۰۰
+							</div>
+							<div class="result__widget-filter-remove">
+								<span class="icon-close-outline"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Widget end -->
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12">
+			<div class="result">
+				<div class="result__filter">
+					<!-- "Widget start" -->
+					<div class="result__widget">
+						<div class="result__widget-title js-result__widget-title">
+							<div class="result__widget-caption">
+								برندها
+							</div>
+							<div class="result__widget-icon result__widget-icon--rotate js-result__widget-icon">
+								<span class="icon-down-outline"></span>
+							</div>
+						</div>
+						<div class="result__widget-content js-result__widget-content">
+							<ul class="result__widget-brand">
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-brand-item js-result__widget-brand-item">
+									<div class="result__widget-brand-checkbox js-result__widget-brand-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-brand-name">
+										<div class="result__widget-brand-name-persian">
+											سامسونگ
+										</div>
+										<div class="result__widget-brand-name-english">
+											Samsung
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Widget end -->
+
+					<!-- "Widget start" -->
+					<div class="result__widget">
+						<div class="result__widget-title js-result__widget-title">
+							<div class="result__widget-caption">
+								دسته بندی ها
+							</div>
+							<div class="result__widget-icon result__widget-icon--rotate js-result__widget-icon">
+								<span class="icon-down-outline"></span>
+							</div>
+						</div>
+						<div class="result__widget-content js-result__widget-content">
+							<ul class="result__widget-categories result__widget-categories--closed js-result__widget-categories">
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-down-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											کالای دیجیتال
+										</div>			
+									</a>
+									<ul class="result__widget-subcategories">
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>
+												<div class="result__widget-categories-title">
+													کامپیوتر و لپتاپ
+												</div>
+											</a>
+										</li>
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>
+												<div class="result__widget-categories-title">
+													گوشی موبایل
+												</div>
+											</a>
+											<ul class="result__widget-subcategories">
+												<li class="result__widget-categories-item js-result__widget-categories-item">
+													<a href="#" class="result__widget-categories-link">
+														<div class="result__widget-categories-icon">
+															<span class="icon-back-outline"></span>
+														</div>		
+														<div class="result__widget-categories-title">
+															سامسونگ
+														</div>
+													</a>
+												</li>
+												<li class="result__widget-categories-item js-result__widget-categories-item">
+													<a href="#" class="result__widget-categories-link">
+														<div class="result__widget-categories-icon">
+															<span class="icon-back-outline"></span>
+														</div>		
+														<div class="result__widget-categories-title">
+															اپل
+														</div>
+													</a>
+												</li>
+											</ul>		
+										</li>
+									</ul>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											لوازم خانگی
+										</div>
+									</a>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											لوازم آرایشی
+										</div>
+									</a>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-down-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											کالای دیجیتال
+										</div>			
+									</a>
+									<ul class="result__widget-subcategories">
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>
+												<div class="result__widget-categories-title">
+													کامپیوتر و لپتاپ
+												</div>
+											</a>
+										</li>
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>
+												<div class="result__widget-categories-title">
+													گوشی موبایل
+												</div>
+											</a>
+											<ul class="result__widget-subcategories">
+												<li class="result__widget-categories-item js-result__widget-categories-item">
+													<a href="#" class="result__widget-categories-link">
+														<div class="result__widget-categories-icon">
+															<span class="icon-back-outline"></span>
+														</div>		
+														<div class="result__widget-categories-title">
+															سامسونگ
+														</div>
+													</a>
+												</li>
+												<li class="result__widget-categories-item js-result__widget-categories-item">
+													<a href="#" class="result__widget-categories-link">
+														<div class="result__widget-categories-icon">
+															<span class="icon-back-outline"></span>
+														</div>		
+														<div class="result__widget-categories-title">
+															اپل
+														</div>
+													</a>
+												</li>
+											</ul>		
+										</li>
+									</ul>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											لوازم خانگی
+										</div>
+									</a>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											لوازم آرایشی
+										</div>
+									</a>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-down-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											کالای دیجیتال
+										</div>			
+									</a>
+									<ul class="result__widget-subcategories">
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>
+												<div class="result__widget-categories-title">
+													کامپیوتر و لپتاپ
+												</div>
+											</a>
+										</li>
+										<li class="result__widget-categories-item js-result__widget-categories-item">
+											<a href="#" class="result__widget-categories-link">
+												<div class="result__widget-categories-icon">
+													<span class="icon-back-outline"></span>
+												</div>
+												<div class="result__widget-categories-title">
+													گوشی موبایل
+												</div>
+											</a>
+											<ul class="result__widget-subcategories">
+												<li class="result__widget-categories-item js-result__widget-categories-item">
+													<a href="#" class="result__widget-categories-link">
+														<div class="result__widget-categories-icon">
+															<span class="icon-back-outline"></span>
+														</div>		
+														<div class="result__widget-categories-title">
+															سامسونگ
+														</div>
+													</a>
+												</li>
+												<li class="result__widget-categories-item js-result__widget-categories-item">
+													<a href="#" class="result__widget-categories-link">
+														<div class="result__widget-categories-icon">
+															<span class="icon-back-outline"></span>
+														</div>		
+														<div class="result__widget-categories-title">
+															اپل
+														</div>
+													</a>
+												</li>
+											</ul>		
+										</li>
+									</ul>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											لوازم خانگی
+										</div>
+									</a>
+								</li>
+								<li class="result__widget-categories-item js-result__widget-categories-item">
+									<a href="#" class="result__widget-categories-link">
+										<div class="result__widget-categories-icon">
+											<span class="icon-back-outline"></span>
+										</div>
+										<div class="result__widget-categories-title">
+											لوازم آرایشی
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="result__widget-categories-more js-result__widget-categories-more">
+								مشاهده همه دسته بندی ها
+								<span class="result__widget-categories-icon result__widget-categories-icon--rotate js-result__widget-categories-icon">
+									<span class="icon-down-outline"></span>
+								</span>	
+							</div>
+						</div>
+					</div>
+					<!-- Widget end -->
+
+					<!-- "Widget start" -->
+					<div class="result__widget">
+						<div class="result__widget-title js-result__widget-title">
+							<div class="result__widget-caption">
+								رنگ ها
+							</div>
+							<div class="result__widget-icon result__widget-icon--rotate js-result__widget-icon">
+								<span class="icon-down-outline"></span>
+							</div>
+						</div>
+						<div class="result__widget-content js-result__widget-content">
+							<ul class="result__widget-colors">
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											سبز
+										</div>
+										<div class="result__widget-colors-count">
+											(4)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											قرمز
+										</div>
+										<div class="result__widget-colors-count">
+											(۲)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											آبی
+										</div>
+										<div class="result__widget-colors-count">
+											(3)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											زرد
+										</div>
+										<div class="result__widget-colors-count">
+											(2)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											بنفش
+										</div>
+										<div class="result__widget-colors-count">
+											(8)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											صورتی
+										</div>
+										<div class="result__widget-colors-count">
+											(7)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											سفید
+										</div>
+										<div class="result__widget-colors-count">
+											(9)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											مشکی
+										</div>
+										<div class="result__widget-colors-count">
+											(2)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											نقره ای
+										</div>
+										<div class="result__widget-colors-count">
+											(12)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											قهوه ای
+										</div>
+										<div class="result__widget-colors-count">
+											(1)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											نارنجی
+										</div>
+										<div class="result__widget-colors-count">
+											(5)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											نیلی
+										</div>
+										<div class="result__widget-colors-count">
+											(4)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											طلایی
+										</div>
+										<div class="result__widget-colors-count">
+											(3)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											سرخابی
+										</div>
+										<div class="result__widget-colors-count">
+											(2)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											خاکستری
+										</div>
+										<div class="result__widget-colors-count">
+											(7)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											آبی نفتی
+										</div>
+										<div class="result__widget-colors-count">
+											(6)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											گوجه ای
+										</div>
+										<div class="result__widget-colors-count">
+											(5)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											جگری
+										</div>
+										<div class="result__widget-colors-count">
+											(1)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											فسفری
+										</div>
+										<div class="result__widget-colors-count">
+											(4)
+										</div>
+									</div>
+								</li>
+								<li class="result__widget-colors-item js-result__widget-colors-item">
+									<div class="result__widget-colors-checkbox js-result__widget-colors-checkbox">
+										<input type="checkbox" />
+									</div>
+									<div class="result__widget-colors-title">
+										<div class="result__widget-colors-name">
+											بادمجانی
+										</div>
+										<div class="result__widget-colors-count">
+											(2)
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- Widget end -->
+					
+					<!-- "Widget start" -->
+					<div class="result__widget">
+						<div class="result__widget-title js-result__widget-title">
+							<div class="result__widget-caption">
+								محدوده قیمت
+							</div>
+							<div class="result__widget-icon result__widget-icon--rotate js-result__widget-icon">
+								<span class="icon-down-outline"></span>
+							</div>
+						</div>
+						<div class="result__widget-content js-result__widget-content">
+							<div class="result__widget-price">
+								<div class="result__widget-price-slider-wrapper">
+									<div class="result__widget-price-slider js-result__widget-price-slider">
+									</div>
+								</div>
+								<div class="result__widget-price-range">
+									<div class="result__widget-price-range-from-wrapper">
+										از
+										<div class="result__widget-price-range-from js-result__widget-price-range-from">
+											
+										</div>
+										تومان
+									</div>
+									<div class="result__widget-price-range-to-wrapper">
+										تا
+										<div class="result__widget-price-range-to js-result__widget-price-range-to">
+											
+										</div>
+										تومان
+									</div>
+								</div>
+								<div class="result__widget-price-submit-wrapper">
+									<button class="result__widget-price-submit">
+										اعمال محدوه قیمت
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Widget end -->
+
+					<!-- "Widget start" -->
+					<div class="result__widget">
+						<div class="result__widget-title">
+							<div class="result__widget-caption">
+								فیلتر های اعمال شده:
+							</div>
+							<div class="result__widget-filters-close">
+								<span class="">حذف</span>
+							</div>
+						</div>
+						<div class="result__widget-content">
+							<div class="result__widget-filters">
+								<div class="result__widget-filter">
+									<div class="result__widget-filter-title">
+										سامسونگ
+									</div>
+									<div class="result__widget-filter-remove">
+										<span class="icon-close-outline"></span>
+									</div>
+								</div>
+								<div class="result__widget-filter">
+									<div class="result__widget-filter-title">
+										سبز
+									</div>
+									<div class="result__widget-filter-remove">
+										<span class="icon-close-outline"></span>
+									</div>
+								</div>
+								<div class="result__widget-filter">
+									<div class="result__widget-filter-title">
+										از ۲،۰۰۰،۰۰۰ تا ۴۰،۰۰۰،۰۰۰
+									</div>
+									<div class="result__widget-filter-remove">
+										<span class="icon-close-outline"></span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Widget end -->
+					
+				</div>
+				<div class="result__main-wrapper">
+					<div class="result__main-header">
+						@@include('../common/breadcrumbs.html')
+						<div class="result__main-result-count">
+							372 کالا
+						</div>
+					</div>
+
+					<div class="result__main">
+						<div class="result__order-wrapper">
+							<div class="result__order">
+								<div class="result__order-icon">
+									<span class="icon-filter-outline"></span>
+								</div>
+								<div class="result__order-title">
+									مرتب سازی بر ساس: 
+								</div>
+								<ul class="result__order-list">
+									<li class="result__order-item result__order-item--active js-result__order-item">
+										پر بازدید ترین
+									</li>
+									<li class="result__order-item js-result__order-item">
+										پر فروش ترین
+									</li>
+									<li class="result__order-item js-result__order-item">
+										محبوب ترین
+									</li>
+									<li class="result__order-item js-result__order-item">
+										جدید ترین
+									</li>
+									<li class="result__order-item js-result__order-item">
+										ارزان ترین
+									</li>
+									<li class="result__order-item js-result__order-item">
+										پر بازدید ترین
+									</li>
+									<li class="result__order-item js-result__order-item">
+										گران ترین
+									</li>
+								</ul>
+							</div>
+							<div class="result__order-instock">
+								<div class="result__order-instock-caption">
+									فقط موجود ها:
+								</div>
+								<label class="result__order-instock-switch">
+									<input type="checkbox">
+									<span class="result__order-instock-switch-slider"></span>
+								</label>
+							</div>
+						</div>
+						<!-- product list start -->
+						<div class="result__products-wrapper">
+
+							<div class="result__products">
+								<div class="result__products-image-wrapper">
+									<a href="/product.html">
+										<div class="result__products-image">
+											<img class="" src="assets/images/product_4.jpg" alt="">
+										</div>
+										<div class="result__products-colors">
+											<span class="result__products-colors--red"></span>
+											<span class="result__products-colors--yellow"></span>
+											<span class="result__products-colors--pink"></span>
+											<span class="result__products-colors--green"></span>
+										</div>
+										<div class="result__products-badge">
+											% 43.2
+										</div>
+									</a>
+								</div>
+								<div class="result__products-details">
+									<span class="result__products-name">
+										گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل 
+									</span>
+
+									<div class="result__products-price">
+										<a href="/product.html">
+											<div class="result__products-price--old">
+												<span class="result__products-price-value">4,000,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+											<div class="result__products-price--new">
+												<span class="result__products-price-value">2,700,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+										</a>
+									</div>
+									<ul class="result__products-actions">
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-cart">
+												<span class="icon-cart-outline"></span>
+												<div class="result__products-cart--tooltip">
+													افزودن به سبد خرید
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-view">
+												<span class="icon-search-outline"></span>
+												<div class="result__products-view--tooltip">
+													مشاهده سریع محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-compare">
+												<span class="icon-filter-outline"></span>
+												<div class="result__products-compare--tooltip">
+													مقایسه محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-like">
+												<span class="icon-heart-outline"></span>
+												<div class="result__products-like--tooltip">
+													افزودن به علاقه مندی ها
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="result__products">
+								<div class="result__products-image-wrapper">
+									<a href="/product.html">
+										<div class="result__products-image">
+											<img class="" src="assets/images/product_4.jpg" alt="">
+										</div>
+										<div class="result__products-colors">
+											<span class="result__products-colors--red"></span>
+											<span class="result__products-colors--yellow"></span>
+											<span class="result__products-colors--pink"></span>
+											<span class="result__products-colors--green"></span>
+										</div>
+										<div class="result__products-badge">
+											% 43.2
+										</div>
+									</a>
+								</div>
+								<div class="result__products-details">
+									<span class="result__products-name">
+										گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل 
+									</span>
+
+									<div class="result__products-price">
+										<a href="/product.html">
+											<div class="result__products-price--old">
+												<span class="result__products-price-value">4,000,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+											<div class="result__products-price--new">
+												<span class="result__products-price-value">2,700,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+										</a>
+									</div>
+									<ul class="result__products-actions">
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-cart">
+												<span class="icon-cart-outline"></span>
+												<div class="result__products-cart--tooltip">
+													افزودن به سبد خرید
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-view">
+												<span class="icon-search-outline"></span>
+												<div class="result__products-view--tooltip">
+													مشاهده سریع محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-compare">
+												<span class="icon-filter-outline"></span>
+												<div class="result__products-compare--tooltip">
+													مقایسه محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-like">
+												<span class="icon-heart-outline"></span>
+												<div class="result__products-like--tooltip">
+													افزودن به علاقه مندی ها
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="result__products">
+								<div class="result__products-image-wrapper">
+									<a href="/product.html">
+										<div class="result__products-image">
+											<img class="" src="assets/images/product_4.jpg" alt="">
+										</div>
+										<div class="result__products-colors">
+											<span class="result__products-colors--red"></span>
+											<span class="result__products-colors--yellow"></span>
+											<span class="result__products-colors--pink"></span>
+											<span class="result__products-colors--green"></span>
+										</div>
+										<div class="result__products-badge">
+											% 43.2
+										</div>
+									</a>
+								</div>
+								<div class="result__products-details">
+									<span class="result__products-name">
+										گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل 
+									</span>
+
+									<div class="result__products-price">
+										<a href="/product.html">
+											<div class="result__products-price--old">
+												<span class="result__products-price-value">4,000,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+											<div class="result__products-price--new">
+												<span class="result__products-price-value">2,700,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+										</a>
+									</div>
+									<ul class="result__products-actions">
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-cart">
+												<span class="icon-cart-outline"></span>
+												<div class="result__products-cart--tooltip">
+													افزودن به سبد خرید
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-view">
+												<span class="icon-search-outline"></span>
+												<div class="result__products-view--tooltip">
+													مشاهده سریع محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-compare">
+												<span class="icon-filter-outline"></span>
+												<div class="result__products-compare--tooltip">
+													مقایسه محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-like">
+												<span class="icon-heart-outline"></span>
+												<div class="result__products-like--tooltip">
+													افزودن به علاقه مندی ها
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="result__products">
+								<div class="result__products-image-wrapper">
+									<a href="/product.html">
+										<div class="result__products-image">
+											<img class="" src="assets/images/product_4.jpg" alt="">
+										</div>
+										<div class="result__products-colors">
+											<span class="result__products-colors--red"></span>
+											<span class="result__products-colors--yellow"></span>
+											<span class="result__products-colors--pink"></span>
+											<span class="result__products-colors--green"></span>
+										</div>
+										<div class="result__products-badge">
+											% 43.2
+										</div>
+									</a>
+								</div>
+								<div class="result__products-details">
+									<span class="result__products-name">
+										گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل 
+									</span>
+
+									<div class="result__products-price">
+										<a href="/product.html">
+											<div class="result__products-price--old">
+												<span class="result__products-price-value">4,000,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+											<div class="result__products-price--new">
+												<span class="result__products-price-value">2,700,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+										</a>
+									</div>
+									<ul class="result__products-actions">
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-cart">
+												<span class="icon-cart-outline"></span>
+												<div class="result__products-cart--tooltip">
+													افزودن به سبد خرید
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-view">
+												<span class="icon-search-outline"></span>
+												<div class="result__products-view--tooltip">
+													مشاهده سریع محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-compare">
+												<span class="icon-filter-outline"></span>
+												<div class="result__products-compare--tooltip">
+													مقایسه محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-like">
+												<span class="icon-heart-outline"></span>
+												<div class="result__products-like--tooltip">
+													افزودن به علاقه مندی ها
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="result__products">
+								<div class="result__products-image-wrapper">
+									<a href="/product.html">
+										<div class="result__products-image">
+											<img class="" src="assets/images/product_4.jpg" alt="">
+										</div>
+										<div class="result__products-colors">
+											<span class="result__products-colors--red"></span>
+											<span class="result__products-colors--yellow"></span>
+											<span class="result__products-colors--pink"></span>
+											<span class="result__products-colors--green"></span>
+										</div>
+										<div class="result__products-badge">
+											% 43.2
+										</div>
+									</a>
+								</div>
+								<div class="result__products-details">
+									<span class="result__products-name">
+										گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل گوشی موبایل سامسونگ مدل 
+									</span>
+
+									<div class="result__products-price">
+										<a href="/product.html">
+											<div class="result__products-price--old">
+												<span class="result__products-price-value">4,000,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+											<div class="result__products-price--new">
+												<span class="result__products-price-value">2,700,000</span>
+												<span class="result__products-price-currency">تومان</span>
+											</div>
+										</a>
+									</div>
+									<ul class="result__products-actions">
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-cart">
+												<span class="icon-cart-outline"></span>
+												<div class="result__products-cart--tooltip">
+													افزودن به سبد خرید
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-view">
+												<span class="icon-search-outline"></span>
+												<div class="result__products-view--tooltip">
+													مشاهده سریع محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-compare">
+												<span class="icon-filter-outline"></span>
+												<div class="result__products-compare--tooltip">
+													مقایسه محصول
+												</div>
+											</a>
+										</li>
+										<li class="result__products-actions-item">
+											<a href="#" class="result__products-like">
+												<span class="icon-heart-outline"></span>
+												<div class="result__products-like--tooltip">
+													افزودن به علاقه مندی ها
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- product list end -->
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
-

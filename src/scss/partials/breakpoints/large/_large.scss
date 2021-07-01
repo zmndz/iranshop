@@ -9,9 +9,10 @@
 		max-width: 1070px;
 	}
 
-	@import '_header__desktop';
-	@import '_categories';
-	@import '_product-slider';
-	@import '_brand-slider';
-	@import '_special-slider';
+	@import 'pages/_header__desktop';
+	@import 'pages/_categories';
+	@import 'pages/_product-slider';
+	@import 'pages/_brand-slider';
+	@import 'pages/_special-slider';
+	@import 'pages/_result';
 }
